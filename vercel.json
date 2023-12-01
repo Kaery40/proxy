@@ -1,1 +1,8 @@
-{"success":true,"message":"验证成功，剩余天数114514天！"}
+{
+  "rewrites": [
+    { "source": "/proxy/:match/:url*", "destination": "https://:match/:url*" },
+    { "source": "/proxy/:match/:url*/", "destination": "https://:match/:url*/" },
+    { "source": "/httpproxy/:match/:url*", "destination": "http://:match/:url*" },
+    { "source": "/httpproxy/:match/:url*/", "destination": "http://:match/:url*/" }
+  ]
+}
